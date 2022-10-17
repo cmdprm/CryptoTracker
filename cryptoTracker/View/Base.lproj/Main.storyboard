@@ -16,32 +16,140 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Crypto Tracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfJ-SY-qne">
-                                <rect key="frame" x="114" y="95" width="162" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="l3V-2J-jJH">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to crypto" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9p-5Z-igP">
+                                <rect key="frame" x="137.33333333333334" y="165.66666666666666" width="115.33333333333334" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BTC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9p-5Z-igP">
-                                <rect key="frame" x="174" y="222" width="33" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crypto Tracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfJ-SY-qne">
+                                <rect key="frame" x="101" y="82" width="188" height="33.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbJ-0V-fnN">
-                                <rect key="frame" x="158" y="452" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                <connections>
-                                    <action selector="parseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eNz-2S-Dt7"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6xo-h1-knK">
+                                <rect key="frame" x="57.666666666666657" y="370" width="275" height="340"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="tag-sC-LTZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6M-NH-RDU">
+                                                <rect key="frame" x="0.0" y="0.0" width="112.33333333333333" height="100"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="BTC">
+                                                    <backgroundConfiguration key="background" image="BTC button" imageContentMode="scaleAspectFit"/>
+                                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="25"/>
+                                                    <color key="baseForegroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="parseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Whl-Wi-YaR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1F-CT-Uc7">
+                                                <rect key="frame" x="162.33333333333334" y="0.0" width="112.66666666666666" height="100"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="ETH">
+                                                    <backgroundConfiguration key="background" image="ETH button" imageContentMode="scaleAspectFit"/>
+                                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="25"/>
+                                                    <color key="baseForegroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="parseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q9C-lu-bCA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="tE8-em-42O"/>
+                                            <constraint firstAttribute="width" constant="275" id="xbk-pd-8gI"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="kgk-sH-0aU">
+                                        <rect key="frame" x="0.0" y="120" width="275" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOr-ff-0O9">
+                                                <rect key="frame" x="0.0" y="0.0" width="112.33333333333333" height="100"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="LTC">
+                                                    <backgroundConfiguration key="background" image="LTC button" imageContentMode="scaleAspectFit"/>
+                                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="25"/>
+                                                    <color key="baseForegroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="parseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="02g-vz-8gr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZk-vd-mp0">
+                                                <rect key="frame" x="162.33333333333334" y="0.0" width="112.66666666666666" height="100"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="TRX">
+                                                    <backgroundConfiguration key="background" image="TRX button" imageContentMode="scaleAspectFit"/>
+                                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="25"/>
+                                                    <color key="baseForegroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="parseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RwT-OZ-otp"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Ie1-0R-cMc"/>
+                                            <constraint firstAttribute="width" constant="275" id="iXh-Iq-Tg6"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="3GV-ki-yF7">
+                                        <rect key="frame" x="0.0" y="240" width="275" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Yb-wn-EDE">
+                                                <rect key="frame" x="0.0" y="0.0" width="112.33333333333333" height="100"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="ADA">
+                                                    <backgroundConfiguration key="background" image="ADA button" imageContentMode="scaleAspectFit"/>
+                                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="25"/>
+                                                    <color key="baseForegroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="parseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XmP-B7-myU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPg-Pi-9vY">
+                                                <rect key="frame" x="162.33333333333334" y="0.0" width="112.66666666666666" height="100"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="SOL">
+                                                    <backgroundConfiguration key="background" image="SOL button" imageContentMode="scaleAspectFit"/>
+                                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="25"/>
+                                                    <color key="baseForegroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="parseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xBh-Oq-T5h"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="oEw-Ld-Jte"/>
+                                            <constraint firstAttribute="width" constant="275" id="spA-ds-hig"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="W9p-5Z-igP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5zZ-2g-3fp"/>
+                            <constraint firstItem="6xo-h1-knK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H5s-zW-5RJ"/>
+                            <constraint firstItem="l3V-2J-jJH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RrA-bd-9Pk"/>
+                            <constraint firstItem="W9p-5Z-igP" firstAttribute="top" secondItem="IfJ-SY-qne" secondAttribute="bottom" constant="50" id="fb7-or-vaS"/>
+                            <constraint firstItem="l3V-2J-jJH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hqn-eM-8nr"/>
+                            <constraint firstItem="IfJ-SY-qne" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="lXH-cA-Ule"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6xo-h1-knK" secondAttribute="bottom" constant="100" id="muw-Es-1mR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l3V-2J-jJH" secondAttribute="trailing" id="oSy-b2-RRC"/>
+                            <constraint firstAttribute="bottom" secondItem="l3V-2J-jJH" secondAttribute="bottom" id="uUE-dF-hRf"/>
+                            <constraint firstItem="IfJ-SY-qne" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vfU-vX-wdp"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="outputLabel" destination="W9p-5Z-igP" id="0HA-BM-FKH"/>
@@ -49,10 +157,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="-2"/>
+            <point key="canvasLocation" x="140" y="-2.1327014218009479"/>
         </scene>
     </scenes>
     <resources>
+        <image name="ADA button" width="200" height="200"/>
+        <image name="BTC button" width="200" height="200"/>
+        <image name="Background" width="1080" height="1920"/>
+        <image name="ETH button" width="200" height="200"/>
+        <image name="LTC button" width="200" height="200"/>
+        <image name="SOL button" width="200" height="200"/>
+        <image name="TRX button" width="200" height="200"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
