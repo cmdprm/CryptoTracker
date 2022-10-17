@@ -10,6 +10,8 @@ import Foundation
 struct JSONParser {
     let urlString = "https://rest.coinapi.io/v1/exchangerate/BTC/USD?apikey=07C996B7-1F9F-42CE-B9DE-6AEA26F6884E"
     
+    let test = 123
+    
     func parse() {
         
         if let url = URL(string: urlString) {
