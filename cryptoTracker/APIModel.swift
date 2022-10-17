@@ -1,5 +1,5 @@
 //
-//  RateExchange.swift
+//  APIModel.swift
 //  cryptoTracker
 //
 //  Created by User on 17.10.2022.

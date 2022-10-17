@@ -14,7 +14,7 @@
 		CE59029C28F8C8FB00A524EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE59029B28F8C8FB00A524EE /* Assets.xcassets */; };
 		CE59029F28F8C8FB00A524EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE59029D28F8C8FB00A524EE /* LaunchScreen.storyboard */; };
 		CEE008B728FD4ACA0012E91D /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE008B628FD4ACA0012E91D /* JSONParser.swift */; };
-		CEE008B928FD51870012E91D /* RateExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE008B828FD51870012E91D /* RateExchange.swift */; };
+		CEE008B928FD51870012E91D /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE008B828FD51870012E91D /* APIModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		CE59029E28F8C8FB00A524EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE5902A028F8C8FB00A524EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEE008B628FD4ACA0012E91D /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
-		CEE008B828FD51870012E91D /* RateExchange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateExchange.swift; sourceTree = "<group>"; };
+		CEE008B828FD51870012E91D /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				CEE008B628FD4ACA0012E91D /* JSONParser.swift */,
-				CEE008B828FD51870012E91D /* RateExchange.swift */,
+				CEE008B828FD51870012E91D /* APIModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -172,7 +172,7 @@
 				CE59029328F8C8FA00A524EE /* AppDelegate.swift in Sources */,
 				CEE008B728FD4ACA0012E91D /* JSONParser.swift in Sources */,
 				CE59029528F8C8FA00A524EE /* SceneDelegate.swift in Sources */,
-				CEE008B928FD51870012E91D /* RateExchange.swift in Sources */,
+				CEE008B928FD51870012E91D /* APIModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
